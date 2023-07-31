@@ -1,0 +1,61 @@
+<!-- ***************************************************
+FILE: index.html
+
+DESCRIPTION: 
+Main index
+
+AUTHOR:  Luis Pedroza
+CREATED: 28/07/2023 (dd/mm/yy)
+**************************************************** -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Pedroza</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+    <header>
+        <h1>Mis Paginas web</h1>
+    </header>
+    <section>
+        <li>
+            Primal
+            <a href="{%url 'primal'%}">
+                <img src="{%static 'primal.jpg'%}" alt="primal">
+            </a>
+        </li>
+        <li>
+            Reproductor
+            <a href="./reproductor/index.html">
+                <img src="{%static 'reproductor.jpg'%}" alt="reproductor">
+            </a>
+            
+        </li>
+        <li>
+            Pastelería
+            <a href="./pasteleria/index.html">
+                <img src="{%static 'pasteleria.png'%}" alt="pasteleria">
+            </a>
+            
+        </li>
+        <li>
+            Vacunación
+            <a href="./vacunacion/index.html">
+                <img src="{%static 'vacunacion.webp'%}" alt="vacunacion">
+            </a>
+            
+        </li>   
+        <li>
+            Pokedex
+            <a href="./pokedex/index.html">
+                <img src="{%static 'pokedex.png'%}" alt="pokedex">
+            </a>
+            
+        </li>   
+    </section>
+</body>
+</html>

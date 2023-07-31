@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PRIMAL</title>
+        <link rel="stylesheet" type="text/css" href = "{% static 'Estilos.css'%}">
+        <link rel="icon" href="{% static 'image/primal-icono.jpg' %}">
+    </head>
+<body>
+     <!-- ********** ENCABEZADO ********* -->
+     <header>
+        <div id="logo">
+            <a href="{% url 'primal'%}">
+                <img src="{%static 'image/primal-logo.jpg'%}" alt="logo">
+            </a>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li id="seccion">
+                    <a href="{%url 'personajes'%}">Personajes</a>
+                </li>
+                <li id="seccion">
+                    <a href="{%url 'episodios'%}">Episodios</a>
+                </li>
+                <li id="seccion">
+                    <a href="{%url 'extras'%}">Extras</a>
+                </li>
+                <li id="seccion">
+                    <a href="{%url 'perfil'%}">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

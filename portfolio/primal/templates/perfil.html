@@ -1,0 +1,32 @@
+<!-- ********** Pedroza Moranchel Luis Fernando ********** -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <!-- ********** ENCABEZADO ********* -->
+    {% include './header.html' %}
+<body id="fondo">
+    <!-- ********** ENCABEZADO ********* -->
+    
+    <!-- ********** CUERPO ********* -->
+    <br><br>
+    <div id="contenedorUsuario">
+        <div id="contenidoUsuario">
+            <div id="avatar">
+                <img src="{%static 'image/spear.png'%}" alt="imagen de usuario">
+            </div>
+            <div id="datosUsuario" ;>
+                <h1>PERFIL</h1>
+                <p>Nombre <input type="text" placeholder="Juan Perez"></p>
+                <p>Correo <input type="email" placeholder="ejempo@primal.com"></p>
+                <p>Contraseña <input type="password"></p>
+                <a><input type="checkbox">Recibir notificaciones</a>
+                <button type="button">Guardar</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- ********** PIE DE PAGINA ********* -->
+    {% include './footer.html' %}
+</body>
+
+</html>
