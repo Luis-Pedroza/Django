@@ -1,11 +1,11 @@
 <!-- ********** Pedroza Moranchel Luis Fernando ********** -->
+{%extends "header.html"%}
 {% load static %}
-<!DOCTYPE html>
-<html>
-    <!-- ********** ENCABEZADO ********* -->
-    {% include './header.html' %}
+
+{%block title%} Extras {%endblock%}
+
+{%block content%}
 <body id="fondo">
-    <!-- ********** CUERPO ********* -->
     <div id="contenedorEX">
         <div id="cartasEX">
             <iframe width='400' height='315' src='https://www.adultswim.com/player/embed/AW3fOK581YiBSfg0KX1u'
@@ -38,8 +38,5 @@
             <h4>Episode pitch - Spear and fang</h4>
         </div>
     </div>
-    <!-- ********** PIE DE PAGINA ********* -->
-    {% include './footer.html' %}
 </body>
-
-</html>
+{%endblock%}

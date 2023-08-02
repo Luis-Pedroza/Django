@@ -1,8 +1,10 @@
 <!-- ********** Pedroza Moranchel Luis Fernando ********** -->
+{%extends "header.html"%}
 {% load static %}
-<!DOCTYPE html>
-<html>
-    {% include './header.html' %}
+
+{%block title%} PRIMAL {%endblock%}
+
+{%block content%}
 <body id="fondo">
     <!-- ********** CUERPO ********* -->
     <video controls autoplay muted loop>
@@ -42,9 +44,5 @@
             cuatro veces a los premios Annie.
         </p>
     </fieldset>
-    <!-- ********** PIE DE PAGINA ********* -->
-    {% include './footer.html' %}
-
 </body>
-
-</html>
+{%endblock%}

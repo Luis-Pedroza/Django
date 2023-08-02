@@ -14,6 +14,3 @@ def perfil(request):
 
 def personajes(request):
     return render(request, 'personajes.html')
-
-def header(request):
-    return render(request, 'header.html')

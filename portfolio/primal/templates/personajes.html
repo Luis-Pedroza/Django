@@ -1,9 +1,9 @@
 <!-- ********** Pedroza Moranchel Luis Fernando ********** -->
+{%extends "header.html"%}
 {% load static %}
-<!DOCTYPE html>
-<html>
-    <!-- ********** ENCABEZADO ********* -->
-    {% include './header.html' %}
+
+{%block title%} Personajes {%endblock%}
+{%block content%}
 <body id="fondo">
     <!-- ********** CUERPO ********* -->
     <div id="contenedor">
@@ -43,8 +43,5 @@
             </p>
         </div>
     </div>
-    <!-- ********** PIE DE PAGINA ********* -->
-    {% include './footer.html' %}
 </body>
-
-</html>
+{%endblock%}
